@@ -351,7 +351,7 @@ function [epsRMS,optOvl] = optOvlForceS(data,SGfiltparam,nodeParam,...
     
     % The Root Mean Square values of each distance slice for each node k
     % are condensed into another Root Mean Square value epsRMS
-    epsRMS = sqrt((sum(optOvl.eFsliceRMS(:,1).^2))./size(data.Vamp,2));
+    epsRMS = sqrt((sum(optOvl.eFsliceRMS(:,1).^2))./size(nodeParam.Find,2));
     
  
 %% Store variables in optOvl
